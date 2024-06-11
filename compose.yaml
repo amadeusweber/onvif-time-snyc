@@ -1,0 +1,14 @@
+services:
+  web:
+    container_name: onvif-time-sync
+    restart: always
+    build:
+      context: src
+      target: builder
+    stop_signal: SIGINT
+    ports:
+      - 5000:5000
+    volumes:
+      - ./cams.conf:/app/cams.conf
+    environment:
+      - TZ=Europe/Berlin
