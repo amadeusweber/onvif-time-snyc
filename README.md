@@ -53,3 +53,6 @@ Possible results are:
  * 200: Time set successfully
  * 404: Camera name not in config
  * 500: Camera not reachable
+
+# References
+* [onvif-zeep](https://pypi.org/project/onvif-zeep/)
