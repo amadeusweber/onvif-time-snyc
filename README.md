@@ -43,3 +43,13 @@ This will build the docker image and launch a container on port 5000.
 Modify the [compose.yaml](compose.yaml) as needed.
 
 This will launch the API on port 5000.
+
+# Usage
+To invoke the time setting function for a camera, call the API with the camera name, specified in the [cams.conf](cams.conf):
+
+[http://127.0.0.1:5000/Cam1](http://127.0.0.1:5000/Cam1)
+
+Possible results are:
+ * 200: Time set successfully
+ * 404: Camera name not in config
+ * 500: Camera not reachable
