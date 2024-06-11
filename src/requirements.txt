@@ -1,0 +1,7 @@
+# ONVIF
+onvif-zeep
+
+# API
+flask
+flask-cors
+python-dotenv
